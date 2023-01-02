@@ -43,19 +43,19 @@
                         <c-list-item>
                             <c-text>
                                 <font-awesome-icon icon="fa-solid fa-check" />
-                                Design and implement a system to monitor and control the temperature of a greenhouse
+                                Developed a frontend creature creation and viewing tool for a client's existing database of fantasy creatures
                             </c-text>
                         </c-list-item>
                         <c-list-item>
                             <c-text>
                                 <font-awesome-icon icon="fa-solid fa-check" />
-                                Utilize a Raspberry Pi to collect data from sensors and control the greenhouse
+                                Used a CI/CD workflow to efficiently and effectively develop and deploy the product
                             </c-text>
                         </c-list-item>
                         <c-list-item>
                             <c-text>
                                 <font-awesome-icon icon="fa-solid fa-check" />
-                                Use a web application to display the data and control the greenhouse
+                                Gained experience in communicating with a client and managing expectations
                             </c-text>
                         </c-list-item>
                     </c-list>

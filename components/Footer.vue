@@ -3,6 +3,7 @@
         <c-grid
             w="100vw"
             template-columns="repeat(3,1fr)"
+            grid-gap="5"
             bg="#101935"
             p="5"
             >
@@ -10,7 +11,8 @@
                 <c-flex>
                     <c-image
                         :src="require('@/assets/logo-no-background.svg')"
-                        h="50px"
+                        :w="{base: '100%', lg: '75%', xl: '50%'}"
+                        mb="2"
                     />
                 </c-flex>
                 <c-flex>
@@ -218,7 +220,7 @@
 
             scrollTo(id) {
                 var element = document.getElementById(id)
-                var offset = 80
+                var offset = 60
                 var elementPos = element.getBoundingClientRect().top
                 var offsetPosition = elementPos + window.pageYOffset - offset
 

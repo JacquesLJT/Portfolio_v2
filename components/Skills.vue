@@ -1,11 +1,9 @@
 <template>
     <c-flex 
         w="100%"
+        h="100vh"
         justify-content="center"
         flex-wrap="wrap"
-        bg="#FFEAEC"
-        color="#982649"
-        font-weight="500"
         id="skills"
     >
         <c-flex m="5" w="100vw" justify="center">

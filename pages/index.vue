@@ -3,7 +3,7 @@
     <Navbar />
     <Hero />
     <About />
-    <Skills />
+    <newSkills />
     <Projects />
     <Experience />
     <Contact />
@@ -15,10 +15,10 @@
   import Navbar from '~/components/Navbar.vue'
   import Hero from '../components/Hero.vue';
   import About from '../components/About.vue';
-  import Skills from '../components/Skills.vue';
-  import Projects from '../components/Projects.vue';
+  import Skills from '../components/newSkills.vue';
+  import Projects from '../components/newProjects.vue';
   import Footer from '../components/Footer.vue';
-  import Experience from '../components/Experience.vue';
+  import Experience from '../components/newExperience.vue';
   import Contact from '../components/Contact.vue';
 
   export default {

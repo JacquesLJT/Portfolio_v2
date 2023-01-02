@@ -1,46 +1,49 @@
 <template>
     <c-flex
-        w="100%"
-        pt="80px"
-        justify-content="center"
-        flex-wrap="wrap"
-        bg="#FFEAEC"
-        id="home"
+        class="hero"
+        id = "home"
+        v-bind:style="{ 
+                        backgroundImage: 'url(' + require('@/assets/hero2.jpeg') + ')', 
+                        backgroundSize: 'cover', 
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundAttachment: 'fixed' 
+                    }"
+        w = "100%"
+        h = "100vh"
+        flex-wrap = "wrap"
+        color = "#101935"
+        justify = "center"
+        align-items = "center"
     >
         <c-flex
-            m="5"
-            w="100vw"
+            w="100%"
+            h="max-content"
             justify="center"
+            align-items="center"
         >
-            <c-text font-family="Quicksand, sans-serif" fontSize="6xl" font-weight="700" color="#982649">
+            <c-text 
+                font-family="Quicksand, sans-serif"
+                :font-size="{ base: '72px', sm: '96px' }"
+                font-weight="700" 
+                justify="center" 
+                align="center"
+            >
                 Hey, I'm Landon!
             </c-text>
         </c-flex>
-        <c-flex
-            w="100%"
-            flex-wrap="wrap"
+        <c-flex 
+            w = "100%"
+            justify = "center"
+            :style = "{ position: 'absolute', bottom: '30px' }"
         >
-            <c-flex w="60%" justify="center" align="center">
-                <c-flex w="80%" font-family="Exo 2, sans-serif" fontSize="4xl" font-weight="500" color="#982649">
-                    <c-text>
-                        I'm a student studying at the University of Maine in Orono. I'm pursuing a Bachelor's of Science in Computer Science with a minor in Computer Engineering. 
-                        Graduating in the spring of 2023.
-                    </c-text>
-                </c-flex>
-            </c-flex>
-            <c-flex w="40%" justify="center">
-                <c-image
-                    h="400px"
-                    w="400px"
-                    object-fit="cover"
-                    rounded="full"
-                    :src="require('@/assets/landon.jpg')"
-                    border="4px solid #101935"
-                />
-            </c-flex>
-            <c-flex w="100%" justify="center">
-                <c-icon name="arrow-down" size="20" v-if="showArrow" class="arrow down" color="#101935"/>
-            </c-flex>
+            <font-awesome-icon 
+                v-if="showArrow" 
+                icon="fa-solid fa-arrow-down"
+                size="8x"
+                class="arrow down" 
+                color="#101935"
+            />
         </c-flex>
     </c-flex>
 </template>
