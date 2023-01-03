@@ -7,7 +7,7 @@
         flex-wrap="wrap"
         color="#101935"
         v-bind:style="{ 
-            backgroundImage: 'url(' + require('@/assets/experience.jpeg') + ')',
+            backgroundImage: 'url(' + require('@/assets/background.jpeg') + ')',
             backgroundSize: 'cover',
             backgroundPosition: 'top',
             backgroundRepeat: 'no-repeat',

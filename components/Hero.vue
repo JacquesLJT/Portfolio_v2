@@ -3,7 +3,7 @@
         class="hero"
         id = "home"
         v-bind:style="{ 
-                        backgroundImage: 'url(' + require('@/assets/hero2.jpeg') + ')', 
+                        backgroundImage: 'url(' + require('@/assets/background1.jpeg') + ')', 
                         backgroundSize: 'cover', 
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',

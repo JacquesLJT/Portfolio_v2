@@ -7,7 +7,7 @@
         flex-wrap="wrap"
         color="#D9E3F2"
         v-bind:style="{ 
-            backgroundImage: 'url(' + require('@/assets/skills7.jpeg') + ')',
+            backgroundImage: 'url(' + require('@/assets/background2.jpeg') + ')',
             backgroundSize: 'cover', 
             backgroundPosition: 'top',
             backgroundRepeat: 'no-repeat',

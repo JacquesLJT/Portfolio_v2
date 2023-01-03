@@ -87,7 +87,7 @@
                     rounded="full"
                     :w="{ base: '50%', xl: '100%'}"
                     alt="Placeholder"
-                    :src="require('@/assets/landon.jpg')"
+                    :src="require('@/assets/headshot.jpeg')"
                     object-fit="cover"
                     border="5px solid #101935"
                 />

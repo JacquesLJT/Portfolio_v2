@@ -90,7 +90,7 @@
                 align-items="center"
             >
                 <c-image 
-                    :src="require('@/assets/portfolio_v1.png')"
+                    :src="require('@/assets/portfolio_v1.jpeg')"
                     alt="portfolio"
                     object-fit="cover"
                     border="2px solid black"
@@ -182,7 +182,7 @@
                 align-items="center"
             >
                 <c-image 
-                    :src="require('@/assets/cswap_screenshot.png')"
+                    :src="require('@/assets/cswap.jpeg')"
                     alt="cswap_screenshot"
                     object-fit="cover"
                     border="2px solid black"
@@ -377,7 +377,7 @@
                 :px="{ base: '0', md: '10'}"
             >
                 <c-image
-                    :src="require('@/assets/ps2_pi.jpeg')"
+                    :src="require('@/assets/rpi.jpeg')"
                     alt="wikiscraper"
                     object-fit="cover"
                     border="2px solid black"
@@ -446,7 +446,7 @@
                 :px="{ base: '0', md: '10'}"
             >
                 <c-image
-                    :src="require('@/assets/wikiscraper.png')"
+                    :src="require('@/assets/terminal.jpeg')"
                     alt="wikiscraper"
                     object-fit="cover"
                     border="2px solid black"
