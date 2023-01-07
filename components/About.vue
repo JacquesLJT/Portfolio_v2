@@ -1,7 +1,7 @@
 <template>
     <c-flex 
         w="100%"
-        :h="{ base: '100%', xl: '100vh'}"
+        min-h="100vh"
         justify-content="center"
         flex-wrap="wrap"
         color="#101935"
