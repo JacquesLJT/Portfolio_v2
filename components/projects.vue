@@ -104,10 +104,10 @@
                     <c-flex
                         border="4px solid #101935"
                     >
-                        <nuxt-img
-                            src="/portfolio_v1.webp"
-                            alt="portfolio"
-                            fit="cover"
+                        <c-image
+                            :src="require('@/static/portfolio_v1.webp')"
+                            alt="'Portfolio Website v1'"
+                            object-fit="cover"
                         />
                     </c-flex>
                 </c-flex>
@@ -198,10 +198,10 @@
                     <c-flex
                         border="4px solid #101935"
                     >
-                        <nuxt-img
-                            src="/cswap.webp"
-                            alt="cswap"
-                            fit="cover"
+                        <c-image
+                            :src="require('@/static/cswap.webp')"
+                            alt="screenshot of the cswap project website"
+                            object-fit="cover"
                         />
                     </c-flex>
                 </c-flex>
@@ -402,10 +402,10 @@
                     <c-flex
                         border="4px solid #101935"
                     >
-                        <nuxt-img
-                            src="/rpi_ps2.webp"
-                            alt="Raspberry Pi and PS2 Keyboard"
-                            fit="cover"
+                        <c-image
+                            :src="require('@/static/rpi_ps2.webp')"
+                            alt="PS/2 Keyboard connected to Raspberry Pi"
+                            object-fit="cover"
                         />
                     </c-flex>
                 </c-flex>
@@ -474,10 +474,10 @@
                     <c-flex
                         border="4px solid #101935"
                     >
-                        <nuxt-img
-                            src="/wikiscraper.webp"
-                            alt="wikiscraper"
-                            fit="cover"
+                        <c-image
+                            :src="require('@/static/wikiscraper.webp')"
+                            alt="Wikipedia Web Scraper"
+                            object-fit="cover"
                         />
                     </c-flex>
                 </c-flex>
@@ -488,7 +488,7 @@
 </template>
 
 <script>
-    import { CButton, CFlex, CStack, CText } from "@chakra-ui/vue";
+    import { CButton, CFlex, CStack, CText, CImage } from "@chakra-ui/vue";
 
     export default {
         name: "Projects",
@@ -497,6 +497,7 @@
             CFlex,
             CStack,
             CText,
+            CImage,
         },
     };
 </script>
