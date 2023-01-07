@@ -34,7 +34,27 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/fontawesome',
   ],
+
+  fontawesome: {
+    icons: {
+      solid: [
+        'faArrowDown',
+        'faMapLocationDot',
+        'faCheck'
+      ],
+      brands: [
+        'faGithub',
+        'faLinkedin',
+        'faTwitter'
+      ],
+      regular: [
+        'faFilePdf',
+        'faEnvelope'
+      ]
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -42,6 +62,8 @@ export default {
     '@chakra-ui/nuxt',
     // https://go.nuxtjs.dev/emotion
     '@nuxtjs/emotion',
+    
+    '@nuxt/image',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -10,7 +10,7 @@
             <c-grid-item>
                 <c-flex>
                     <c-image
-                        :src="require('@/assets/logo-no-background.svg')"
+                        :src="require('@/static/logo-no-background.svg')"
                         :w="{base: '100%', lg: '75%', xl: '50%'}"
                         mb="2"
                     />
@@ -24,7 +24,9 @@
                         fontSize="12px"
                         w="max-content"
                         >
-                        <font-awesome-icon icon="fa-regular fa-envelope" />
+                        <font-awesome-icon
+                            :icon="['far', 'envelope']"
+                        />
                         me@landonthibodeau.com
                     </c-pseudo-box>
                 </c-flex>
@@ -38,7 +40,9 @@
                         fontSize="12px"
                         w="max-content"
                         >
-                        <font-awesome-icon icon="fa-solid fa-map-location-dot" />
+                        <font-awesome-icon
+                            :icon="['fas', 'map-location-dot']"
+                        />
                         Freeport, ME
                     </c-pseudo-box>
                 </c-flex>
@@ -128,7 +132,9 @@
                         target="_blank"
                         :_hover="{textDecoration: 'underline'}"
                         >
-                        <font-awesome-icon icon="fa-regular fa-file-pdf" />
+                        <font-awesome-icon
+                            :icon="['far', 'file-pdf']"
+                        />
                         Resume PDF
                     </c-pseudo-box>
                 </c-flex>
@@ -142,7 +148,9 @@
                         target="_blank"
                         :_hover="{textDecoration: 'underline'}"
                         >
-                        <font-awesome-icon icon="fa-brands fa-linkedin" />
+                        <font-awesome-icon
+                            :icon="['fab', 'linkedin']"
+                        />
                         LinkedIn
                     </c-pseudo-box>
                 </c-flex>
@@ -156,7 +164,9 @@
                         target="_blank"
                         :_hover="{textDecoration: 'underline'}"
                         >
-                        <font-awesome-icon icon="fa-brands fa-github" />
+                        <font-awesome-icon
+                            :icon="['fab', 'github']"
+                        />
                         GitHub
                     </c-pseudo-box>
                 </c-flex>
@@ -170,7 +180,9 @@
                         target="_blank"
                         :_hover="{textDecoration: 'underline'}"
                         >
-                        <font-awesome-icon icon="fa-brands fa-twitter" />
+                        <font-awesome-icon
+                            :icon="['fab', 'twitter']"
+                        />
                         Twitter
                     </c-pseudo-box>
                 </c-flex>

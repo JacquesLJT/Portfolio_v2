@@ -7,13 +7,12 @@
         flex-wrap="wrap"
         color="#D9E3F2"
         v-bind:style="{ 
-            backgroundImage: 'url(' + require('@/assets/background2.jpeg') + ')',
+            backgroundImage: 'url(' + require('@/static/skills_background.webp') + ')',
             backgroundSize: 'cover', 
             backgroundPosition: 'top',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed' 
-            }"
-        
+            }"        
     >
         <c-flex
             w="100%"

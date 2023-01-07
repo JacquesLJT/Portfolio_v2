@@ -46,7 +46,7 @@
             <c-flex
                 id = "text-container"
                 :w="{ base: '100%', xl: '60%'}"
-                :px="{ base: '0', md: '10'}"
+                :px="{ base: '10', lg: '0'}"
             >
                 <c-stack 
                     :spacing="5"
@@ -84,17 +84,22 @@
             <c-flex
                 id = "image-container"
                 :w="{ base: '80%', xl: '40%'}"
-                :px="{ base: '0', md: '10'}"
                 :mt="{ base: '10', xl: '0'}"
                 justify="center"
                 align-items="center"
             >
-                <c-image 
-                    :src="require('@/assets/portfolio_v1.jpeg')"
-                    alt="portfolio"
-                    object-fit="cover"
+                <c-flex
+                    h="max-content"
+                    w="max-content"
                     border="2px solid black"
-                />
+                >
+                    <nuxt-img
+                        src="/portfolio_v1.webp"
+                        alt="portfolio"
+                        object-fit="cover"
+                        border="2px solid black"
+                    />
+                </c-flex>
             </c-flex>
             <c-flex
                 id = "button-container"
@@ -148,7 +153,7 @@
             <c-flex
                 id = "text container"
                 :w="{ base: '100%', xl: '60%'}"
-                :px="{ base: '0', md: '10'}"
+                :px="{ base: '10', lg: '0'}"
             >
                 <c-stack 
                     :spacing="5"
@@ -177,16 +182,20 @@
                 id = "image-container"
                 :w="{ base: '80%', xl: '40%'}"
                 :mt="{ base: '10', xl: '0'}"
-                :px="{ base: '0', md: '10'}"
                 justify="center"
                 align-items="center"
             >
-                <c-image 
-                    :src="require('@/assets/cswap.jpeg')"
-                    alt="cswap_screenshot"
-                    object-fit="cover"
+                <c-flex
+                    h="max-content"
+                    w="max-content"
                     border="2px solid black"
-                />
+                >
+                    <nuxt-img
+                        src="/cswap.webp"
+                        alt="cswap_screenshot"
+                        fit="cover"
+                    />
+                </c-flex>
             </c-flex>
             <c-flex
                 id = "button-container"
@@ -239,7 +248,7 @@
             <c-flex
                 id = "text-container"
                 :w="{ base: '100%', xl: '60%'}"
-                :px="{ base: '0', md: '10'}"
+                :px="{ base: '10', lg: '0'}"
             >
                 <c-stack 
                     :spacing="5"
@@ -275,7 +284,6 @@
                 :mt="{ base: '10', xl: '0'}"
                 justify="center"
                 align-items="center"
-                :px="{ base: '0', md: '10'}"
             >
                 <iframe
                     width="560"
@@ -337,7 +345,7 @@
             <c-flex
                 id = "text-container"
                 :w="{ base: '100%', xl: '60%'}"
-                :px="{ base: '0', md: '10'}"
+                :px="{ base: '10', lg: '0'}"
             >
                 <c-stack 
                     :spacing="5"
@@ -374,14 +382,19 @@
                 :mt="{ base: '10', xl: '0'}"
                 justify="center"
                 align-items="center"
-                :px="{ base: '0', md: '10'}"
             >
-                <c-image
-                    :src="require('@/assets/rpi.jpeg')"
-                    alt="wikiscraper"
-                    object-fit="cover"
+                <c-flex
+                    h="max-content"
+                    w="max-content"
                     border="2px solid black"
-                />
+                >
+                    <nuxt-img
+                        src="rpi_ps2.webp"
+                        alt="wikiscraper"
+                        object-fit="cover"
+                        border="2px solid black"
+                    />
+                </c-flex>
             </c-flex>
         </c-flex>
         <c-flex
@@ -410,7 +423,7 @@
             <c-flex
                 id = "text-container"
                 :w="{ base: '100%', xl: '60%'}"
-                :px="{ base: '0', md: '10'}"
+                :px="{ base: '10', lg: '0'}"
             >
                 <c-stack 
                     :spacing="5"
@@ -443,13 +456,11 @@
                 :mt="{ base: '10', xl: '0'}"
                 justify="center"
                 align-items="center"
-                :px="{ base: '0', md: '10'}"
             >
-                <c-image
-                    :src="require('@/assets/terminal.jpeg')"
+                <nuxt-img
+                    src="/wikiscraper.webp"
                     alt="wikiscraper"
-                    object-fit="cover"
-                    border="2px solid black"
+                    fit="cover"
                 />
             </c-flex>
         </c-flex>

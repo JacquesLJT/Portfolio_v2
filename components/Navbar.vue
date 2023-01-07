@@ -27,7 +27,7 @@
                         class = "logo"
                         h="40px"
                         :class = "{ 'logo-small': isScrolling}"
-                        :src="require('@/assets/logo-no-background.svg')"
+                        :src="require('@/static/logo-no-background.svg')"
                     />
                 </c-link>
             </c-flex>

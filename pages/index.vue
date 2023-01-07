@@ -16,7 +16,7 @@
   import Hero from '../components/Hero.vue';
   import About from '../components/About.vue';
   import Skills from '../components/newSkills.vue';
-  import Projects from '../components/newProjects.vue';
+  import Projects from '../components/projects.vue';
   import Footer from '../components/Footer.vue';
   import Experience from '../components/newExperience.vue';
   import Contact from '../components/Contact.vue';

@@ -3,7 +3,7 @@
         class="hero"
         id = "home"
         v-bind:style="{ 
-                        backgroundImage: 'url(' + require('@/assets/background1.jpeg') + ')', 
+                        backgroundImage: 'url(' + require('@/static/hero_background.webp') + ')', 
                         backgroundSize: 'cover', 
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
@@ -39,7 +39,7 @@
         >
             <font-awesome-icon 
                 v-if="showArrow" 
-                icon="fa-solid fa-arrow-down"
+                :icon="['fas', 'arrow-down']"
                 size="8x"
                 class="arrow down" 
                 color="#101935"
@@ -70,6 +70,7 @@
 </style>
 
 <script>
+
     import {
         CFlex,
         CText,

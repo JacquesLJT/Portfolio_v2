@@ -7,7 +7,7 @@
         flex-wrap="wrap"
         color="#101935"
         v-bind:style="{ 
-            backgroundImage: 'url(' + require('@/assets/background.jpeg') + ')',
+            backgroundImage: 'url(' + require('@/static/experience_background.webp') + ')',
             backgroundSize: 'cover',
             backgroundPosition: 'top',
             backgroundRepeat: 'no-repeat',
@@ -87,19 +87,25 @@
                 >
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Developed a frontend creature creation and viewing tool for a client's existing database of fantasy creatures
                         </c-text>
                     </c-list-item>
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Used a CI/CD workflow to efficiently and effectively develop and deploy the product
                         </c-text>
                     </c-list-item>
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Gained experience in communicating with a client and managing expectations
                         </c-text>
                     </c-list-item>
@@ -148,19 +154,25 @@
                 >
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Assisted customers with plant selection and care
                         </c-text>
                     </c-list-item>
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Maintained clean and organized greenhouses
                         </c-text>
                     </c-list-item>
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Gained experience in customer service and plant care
                         </c-text>
                     </c-list-item>
@@ -211,19 +223,25 @@
                 >
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Assisted customers with product selection and checkout
                         </c-text>
                     </c-list-item>
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Maintained a clean and organized store
                         </c-text>
                     </c-list-item>
                     <c-list-item>
                         <c-text>
-                            <font-awesome-icon icon="fa-solid fa-check" />
+                            <font-awesome-icon
+                                :icon="['fas', 'check']"
+                            />
                             Gained experience in customer service and retail
                         </c-text>
                     </c-list-item>

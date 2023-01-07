@@ -40,6 +40,8 @@
             >
                 <c-pseudo-box
                     h="max-content"
+                    justify="center"
+                    align="center"
                     as="a"
                     bg="#C6D5EB"
                     color="#101935"
@@ -57,11 +59,15 @@
                         cursor: 'pointer'
                     }"
                 >
-                    <font-awesome-icon icon="fa-regular fa-envelope" />
+                    <font-awesome-icon
+                        :icon="['far', 'envelope']"
+                    />
                     Email Me
                 </c-pseudo-box>
                 <c-pseudo-box
                     h="max-content"
+                    justify="center"
+                    align="center"
                     as="a"
                     bg="#C6D5EB"
                     color="#101935"
@@ -80,7 +86,9 @@
                         cursor: 'pointer'
                     }"
                 >
-                    <font-awesome-icon icon="fa-regular fa-file-pdf" />
+                    <font-awesome-icon
+                        :icon="['far', 'file-pdf']"
+                    />
                     View Resume
                 </c-pseudo-box>
             </c-flex>
