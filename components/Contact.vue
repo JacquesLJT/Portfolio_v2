@@ -76,7 +76,7 @@
                     px="4"
                     border="2px solid #101935"
                     target="_blank"
-                    href="https://firebasestorage.googleapis.com/v0/b/portfolio-fdf27.appspot.com/o/web_assets%2FResume%CC%81%202021.pdf?alt=media&token=913bfa8c-bf76-4bca-a5dd-db87e3dd4898"
+                    href="2023_resume.pdf"
                     fontSize="3xl"
                     :mt="{ base: '5', sm: '0'}"
                     :ml="{ base: '0', sm: '5'}"
