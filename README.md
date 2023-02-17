@@ -1,6 +1,6 @@
-# Your Portfolio Website v2
+# Portfolio Website v2
 
-A new version of your portfolio website built using Vue, Nuxt, and ChakraUI.
+A new version of my portfolio website built using Vue, Nuxt, and ChakraUI.
 
 This is the second version of my portfolio website, built using Vue.js and Chakra UI. I wanted to create something that would set me apart from other students and job applicants, so I decided to build a portfolio website that showcases my skills and abilities.
 
