@@ -1,71 +1,53 @@
-# portfolio_v2
+# Your Portfolio Website v2
+
+A new version of your portfolio website built using Vue, Nuxt, and ChakraUI.
+
+This is the second version of my portfolio website, built using Vue.js and Chakra UI. I wanted to create something that would set me apart from other students and job applicants, so I decided to build a portfolio website that showcases my skills and abilities.
+
+Before building the first version of my portfolio website, I had no experience in web development. However, I was eager to learn and took the initiative to teach myself HTML, CSS, and JavaScript. Within a few weeks, I was able to start work on the first version of my portfolio using React.js. Although I had no prior web development experience, I was happy with the results and proud to show my portfolio to potential employers and colleagues.
+
+For the second version of my portfolio, I wanted to improve upon the first version and also learn a new framework. I chose to use Vue.js and Chakra UI, as I had heard good things about Vue.js and had previous experience with Chakra UI. I'm pleased with the results and excited to continue building on this project.
+
+## Features
+
+- Dynamic and interactive user interface
+- Responsive design for optimal viewing on any device
+- Clean and modern design using ChakraUI
+- Built with Vue and Nuxt for improved performance and SEO
+
+## Netlify Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ce9a3194-53ca-4a7e-8596-8ff0d6b47053/deploy-status)](https://app.netlify.com/sites/lthibodeauportfolio/deploys)
 
 ## Build Setup
 
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+1. Install dependencies: `npm install`
+2. Serve with hot reload at localhost:3000: `npm run dev`
+3. Build for production and launch server:
+   - `npm run build`
+   - `npm run start`
+4. Generate static project: `npm run generate`
 
 ## Special Directories
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+The following extra directories are included in the project, each with a specific purpose:
 
-### `assets`
+- `assets`: Contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+- `components`: Contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+- `layouts`: Contains different layout options for your Nuxt app.
+- `pages`: Contains your application views and routes. Nuxt will read all the *.vue files inside this directory and set up the Vue Router automatically.
+- `plugins`: Contains JavaScript plugins that you want to run before instantiating the root Vue.js Application.
+- `static`: Contains your static files, each of which is mapped to the root directory.
+- `store`: Contains your Vuex store files, which are automatically activated.
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+For more information about these directories and their usage, check out the Nuxt.js documentation.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+## Built With
 
-### `components`
+- [Vue.js](https://vuejs.org/)
+- [Nuxt.js](https://nuxtjs.org/)
+- [ChakraUI](https://chakra-ui.com/)
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+## Author
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Landon Thibodeau (https://Thibodeau.dev)
