@@ -3,11 +3,11 @@
     <Navbar />
     <Hero />
     <About />
-    <newSkills />
+    <Skills />
     <Projects />
     <Experience />
     <Contact />
-    <Footer /> 
+    <Footer />
   </div>
 </template>
 
