@@ -8,6 +8,7 @@
     <Experience />
     <Contact />
     <Footer />
+    <Watermark />
   </div>
 </template>
 
@@ -20,6 +21,7 @@
   import Footer from '../components/Footer.vue';
   import Experience from '../components/newExperience.vue';
   import Contact from '../components/Contact.vue';
+  import Watermark from '../components/Watermark.vue';
 
   export default {
     name: 'Index',
@@ -31,8 +33,9 @@
     Projects,
     Footer,
     Experience,
-    Contact
-}
+    Contact,
+    Watermark,
+  },
 }
 
 </script>

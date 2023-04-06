@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config()
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -34,9 +37,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/fontawesome',
-
-    '@nuxtjs/google-analytics',
+    '@nuxtjs/fontawesome'
   ],
 
   fontawesome: {
@@ -62,13 +63,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/chakra
     '@chakra-ui/nuxt',
+
     // https://go.nuxtjs.dev/emotion
     '@nuxtjs/emotion',
 
     '@nuxt/image',
+
+    '@nuxtjs/axios',
+
+    ['nuxt-mail', {
+      message: {
+        to: process.env.EMAIL_USER
+      },
+      smtp: {
+        service: 'gmail',
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS
+        }
+      }
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
+
 }
