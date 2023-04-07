@@ -27,11 +27,9 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
 
-      - name: Copy dist directory to DigitalOcean droplet
-        uses: appleboy/scp-action@v0.1.1
-        with:
-          host: ${{ secrets.DROPLET_HOST }}
-          username: ${{ secrets.DROPLET_USERNAME }}
-          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
-          source: "dist/"
-          target: "/var/www/ece435final.thibodeau.dev"
+      - name: Deploy to DigitalOcean Droplet
+        run: |
+            sudo apt-get install -y ssh rsync
+            rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ${{ secrets.DROPLET_PRIVATE_KEY }}" dist/ ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }}:${{ secrets.DROPLET_DEST_DIR }}
+        env:
+            CI: true
