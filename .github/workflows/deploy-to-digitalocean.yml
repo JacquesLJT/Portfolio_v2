@@ -27,9 +27,9 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
 
-      - name: Deploy to DigitalOcean Droplet
+      - name: Deploy the Nuxt app to DigitalOcean
         run: |
-            sudo apt-get install -y ssh rsync
-            rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ${{ secrets.DROPLET_PRIVATE_KEY }}" dist/ ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }}:${{ secrets.DROPLET_DEST_DIR }}"
+          sudo apt-get install -y ssh rsync
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ${{ secrets.DIGITALOCEAN_PRIVATE_KEY }}" dist/ ${{ secrets.DIGITALOCEAN_USER }}@${{ secrets.DIGITALOCEAN_IP }}:${{ secrets.DIGITALOCEAN_DEST_DIR }}
         env:
-            CI: true
+          CI: true
