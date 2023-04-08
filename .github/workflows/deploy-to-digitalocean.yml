@@ -3,7 +3,7 @@ name: Build and Deploy to Droplet
 on:
   push:
     branches:
-      - main # Replace with the branch you want to trigger the workflow
+      - dev # Replace with the branch you want to trigger the workflow
 
 jobs:
   build_and_deploy:
