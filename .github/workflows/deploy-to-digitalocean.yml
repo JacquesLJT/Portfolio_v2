@@ -36,6 +36,8 @@ jobs:
           script: |
             set -e
             sudo apt-get update
-            sudo rm -rf /var/www/html/*
-            sudo cp -r dist/* /var/www/html/
+            sudo rm -rf /var/www/ece435final.thibodeau.dev/*
+            sudo mkdir -p /var/www/ece435final.thibodeau.dev
+            scp -r dist/* ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/var/www/ece435final.thibodeau.dev/
             sudo systemctl restart apache2
+
