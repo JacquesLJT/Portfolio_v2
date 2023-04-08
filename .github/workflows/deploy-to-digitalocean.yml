@@ -1,12 +1,12 @@
-name: Deploy to DigitalOcean
+name: Build and Deploy to Droplet
 
 on:
   push:
     branches:
-      - dev
+      - main # Replace with the branch you want to trigger the workflow
 
 jobs:
-  build-and-deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,20 +16,26 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 14 # Use the desired Node.js version
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Nuxt app
-        run: npm run generate
+        run: npm run build
         env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
 
-      - name: Deploy the Nuxt app to DigitalOcean
-        run: |
-          sudo apt-get install -y ssh rsync
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}" dist/ ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:${{ secrets.DROPLET_DEST_DIR }}
-        env:
-          CI: true
+      - name: Deploy to Droplet
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+            sudo apt-get update
+            sudo rm -rf /var/www/html/*
+            sudo cp -r dist/* /var/www/html/
+            sudo systemctl restart apache2
