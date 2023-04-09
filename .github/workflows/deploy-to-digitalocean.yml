@@ -27,6 +27,9 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
 
+      - name: List current directory contents
+        run: ls -la
+
       - name: Add remote host key
         run: |
           mkdir -p ~/.ssh
@@ -36,7 +39,7 @@ jobs:
         run: |
           echo "${{ secrets.DROPLET_SSH_PRIVATE_KEY }}" > droplet_key
           chmod 600 droplet_key
-          scp -i droplet_key -r ./dist/* ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/tmp/
+          scp -i droplet_key -r dist/* ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/tmp/
           rm droplet_key
 
       - name: Deploy to Droplet
