@@ -61,10 +61,6 @@ export default {
     }
   },
 
-  axios: {
-    baseURL: process.env.API_URL
-  },
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/chakra
@@ -90,6 +86,9 @@ export default {
       }
     }]
   ],
+  axios: {
+    baseURL: process.env.API_URL
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
