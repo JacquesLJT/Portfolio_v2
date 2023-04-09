@@ -32,6 +32,13 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Copy dist to Droplet
+        run: |
+          echo "${{ secrets.DROPLET_SSH_PRIVATE_KEY }}" > droplet_key
+          chmod 600 droplet_key
+          scp -i droplet_key -r ./dist/* ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/tmp/
+          rm droplet_key
+
       - name: Deploy to Droplet
         uses: appleboy/ssh-action@v0.1.5
         with:
