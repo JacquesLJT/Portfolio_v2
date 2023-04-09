@@ -26,6 +26,7 @@ jobs:
         env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        working-directory: ./dist
 
       - name: Add remote host key
         run: |
@@ -33,8 +34,15 @@ jobs:
           ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy to Droplet
-        run: |
-          echo "${{ secrets.DROPLET_SSH_PRIVATE_KEY }}" > droplet_key
-          chmod 600 droplet_key
-          scp -i droplet_key -r dist/* ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/var/www/ece435final.thibodeau.dev
-          rm droplet_key
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+            sudo apt-get update
+            sudo rm -rf /var/www/ece435final.thibodeau.dev
+            sudo mkdir -p /var/www/ece435final.thibodeau.dev
+            sudo cp -r /tmp/* /var/www/ece435final.thibodeau.dev/
+            sudo systemctl restart apache2
