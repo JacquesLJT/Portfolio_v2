@@ -35,22 +35,23 @@ export default {
 
       try {
         await this.$mail.send({
-          from: this.email,
-          to: process.env.EMAIL_USER,
-          subject: `New contact form submission from ${this.name}`,
+          from: `${this.email}`,
+          to: 'me@landonthibodeau.com',
+          subject: `New contact from ${this.name}`,
           text: `Name: ${this.name}\nEmail: ${this.email}\nMessage: ${this.message}`,
         });
 
         alert('Email sent successfully!');
       } catch (error) {
-        alert('Error sending email: ' + error.message);
+        console.error('Error sending email:', error);
+        alert('Error sending email. Please try again later.');
       } finally {
         this.isLoading = false;
         this.name = '';
         this.email = '';
         this.message = '';
       }
-    },
+    }
   },
 };
 </script>
