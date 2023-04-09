@@ -26,7 +26,6 @@ jobs:
         env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-        working-directory: ./dist
 
       - name: Add remote host key
         run: |
