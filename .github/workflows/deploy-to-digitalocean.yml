@@ -6,42 +6,14 @@ on:
       - dev # Replace with the branch you want to trigger the workflow
 
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 19.5.0 # Use the desired Node.js version
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Nuxt app
-        run: npm run build
-        env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-
-      - name: List current directory contents
-        run: ls -la
-
       - name: Add remote host key
         run: |
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts
-
-      - name: Copy .nuxt and other necessary files to Droplet
-        run: |
-          echo "${{ secrets.DROPLET_SSH_PRIVATE_KEY }}" > droplet_key
-          chmod 600 droplet_key
-          scp -i droplet_key -r .nuxt/* ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/tmp/
-          scp -i droplet_key -r package.json package-lock.json nuxt.config.js ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }}:/tmp/
-          rm droplet_key
 
       - name: Deploy to Droplet
         uses: appleboy/ssh-action@v0.1.5
@@ -49,13 +21,19 @@ jobs:
           host: ${{ secrets.DROPLET_HOST }}
           username: ${{ secrets.DROPLET_USERNAME }}
           key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          envs: EMAIL_USER, EMAIL_PASS
           script: |
             set -e
             sudo apt-get update
+            sudo apt-get install -y nodejs npm git
             sudo rm -rf /var/www/ece435final.thibodeau.dev
             sudo mkdir -p /var/www/ece435final.thibodeau.dev
-            sudo cp -r /tmp/* /var/www/ece435final.thibodeau.dev/
             cd /var/www/ece435final.thibodeau.dev
-            sudo npm install --production
-            sudo pm2 start npm --name "ece435final" -- start
+            git clone -b dev https://github.com/JacquesLJT/Portfolio_v2.git .
+            npm install
+            export EMAIL_USER=${{ secrets.EMAIL_USER }}
+            export EMAIL_PASS=${{ secrets.EMAIL_PASS }}
+            npm run build
+            npm install -g pm2
+            pm2 start npm --name "ece435final" -- run start
             sudo systemctl restart apache2
