@@ -7,6 +7,11 @@ export default {
 
   target: 'server',
 
+  server: {
+    port: 3000,
+    host: 'localhost'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Landon Thibodeau',
