@@ -3,14 +3,9 @@ dotenv.config()
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   target: 'server',
-
-  server: {
-    port: 3000,
-    host: 'localhost'
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -44,7 +39,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
   ],
 
   fontawesome: {
@@ -92,11 +87,13 @@ export default {
     }]
   ],
   axios: {
-    baseURL: process.env.API_URL
+    baseURL: process.env.API_URL,
+    proxy: true
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
   }
 
 }
