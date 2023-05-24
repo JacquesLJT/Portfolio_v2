@@ -128,7 +128,7 @@
                         color="#FFECEA"
                         mb="2" 
                         fontSize="12px"
-                        href="https://firebasestorage.googleapis.com/v0/b/portfolio-fdf27.appspot.com/o/web_assets%2FResume%CC%81%202021.pdf?alt=media&token=913bfa8c-bf76-4bca-a5dd-db87e3dd4898"
+                        href="2023_resume.pdf"
                         target="_blank"
                         :_hover="{textDecoration: 'underline'}"
                         >
@@ -190,7 +190,7 @@
         </c-grid>
         <c-flex w="100vw" justify="center" bg="#007EA7">
             <c-text color="#FFECEA" line-height="1.5">
-                © 2022 Landon Thibodeau | 
+                © 2023 Landon Thibodeau | 
                 <c-link 
                     target="_blank"
                     href="https://github.com/JacquesLJT/Portfolio_v2"
@@ -214,7 +214,7 @@
     } from '@chakra-ui/vue'
     
     export default {
-        name: 'Skills',
+        name: 'Footer',
         components: {
             CFlex,
             CText,
