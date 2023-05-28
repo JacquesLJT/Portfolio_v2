@@ -15,6 +15,14 @@
 
 </head>
 <body {{ BODY_ATTRS }}>
+  
+  <!-- Add this inside your index.html -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>
+
   {{ APP }}
 </body>
 </html>
