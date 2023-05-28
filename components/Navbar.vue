@@ -114,14 +114,15 @@
                     color="#FFEAEC"
                     font-family="quicksand, sans-serif"
                     font-weight="700"
-                    fontSize="3xl"
-                    px="5"
-                    border="2px solid #FFEAEC"
+                    fontSize="4xl"
+                    px="6"
+                    border="3px solid #FFEAEC"
                     border-radius="5px"
                     @click="scrollTo('contact')"
                     :_hover="{
                         bg: '#D9E3F2',
                         color: '#101935',
+                        boxShadow: '0 0 10px #D9E3F2',
                     }"
                     :display="{base: 'none', md: 'block'}"
                 >
@@ -159,8 +160,10 @@
                 isScrolling: false
             }
         },
-        mounted() {
-            window.addEventListener('scroll', this.handleScroll)
+        beforeMount() {
+            if (process.client) {
+                window.addEventListener('scroll', this.handleScroll)
+            }
         },
         methods: {
             scrollTo(id) {
@@ -175,11 +178,12 @@
                 })
             },
             handleScroll() {
-                if (window.scrollY > 50) {
-                    this.isScrolling = true
-                } else {
-                    this.isScrolling = false
-                }
+                this.isScrolling = window.scrollY > 50
+            }
+        },
+        beforeDestroy() {
+            if (process.client) {
+                window.removeEventListener('scroll', this.handleScroll)
             }
         }
     }
@@ -187,25 +191,25 @@
 </script>
 
 <style>
-    .navbar-small {
-        padding: 0;
-        height: 60px;
+.navbar {
+    padding: 0;
+    height: 80px;
+    transition: all 0.5s ease-in-out;
+}
 
+.navbar.nav-scrolling {
+    margin: 0;
+    border-radius: 0%;
+    height: 70px;
+}
 
-        transition: all 0.5s ease-in-out;
-    }
+.logo {
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+}
 
-    .nav-scrolling {
-        margin: 0;
-        border-radius: 0%;
-        height: 70px;
+.logo.logo-small {
+    height: 35px;
+}
 
-        transition: all 0.5s ease-in-out;
-    }
-
-    .logo-small {
-        height: 35px;
-
-        transition: all 0.5s ease-in-out;
-    }
 </style>
