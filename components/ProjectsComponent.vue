@@ -5,7 +5,7 @@
         </c-text>
         <c-flex :flex-direction="{ base: 'column', xl: 'row' }">
             <c-box flex="1" display="flex" align-items="start" justifyContent="center" mx="2%">
-                <c-image :src="project.image" :alt="project.title" box-shadow="6px 6px #101935" h="max-content" w="max-content" rounded="lg" overflow="hidden"/>
+                <c-image :src="project.image" :alt="project.title" box-shadow="6px 6px #101935" h="auto" w="max-content" rounded="lg" overflow="hidden"/>
             </c-box>
             <c-box flex="1" d="flex" flex-direction="column" overflow="hidden" ml="2%" mr="4%">
                 <TransitionGroup tag="div" name="list">
