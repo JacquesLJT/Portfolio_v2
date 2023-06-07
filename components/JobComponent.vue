@@ -1,6 +1,6 @@
 <template>
     <c-box maxW="lg" :maxH="{ base: '3xl', xl: '2xl' }" borderWidth="1px" rounded="lg" overflow="hidden" shadow="md" m="5" bg="white" p="5">
-      <c-flex align="center" bg="gray.100" p="4" rounded="lg">
+      <c-flex alignItems="center" bg="gray.100" p="4" rounded="lg">
         <c-avatar :src="job.companyLogo" :alt="job.companyName" size="lg" />
         <c-box ml="4">
           <c-text fontSize="xl" fontWeight="semibold">{{ job.jobTitle }}</c-text>

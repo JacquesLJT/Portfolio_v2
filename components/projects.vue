@@ -36,7 +36,6 @@
 </template>
 
 <script>
-    
     import { CButton, CFlex, CStack, CText, CImage } from "@chakra-ui/vue";
     import ProjectsComponent from "/components/ProjectsComponent.vue";
     import projectData from "/assets/projects.json"
