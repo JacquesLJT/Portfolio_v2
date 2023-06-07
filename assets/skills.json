@@ -1,0 +1,50 @@
+{
+    "Programming Languages": [
+        "Python",
+        "C",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Verilog",
+        "Lisp"
+    ],
+
+    "Libraries & Fameworks": [
+        "React",
+        "Node.js",
+        "Vue.js",
+        "Nuxt.js",
+        "Jest",
+        "Pandas",
+        "TensorFlow",
+        "Keras"
+    ],
+
+    "Software Tools": [
+        "Git",
+        "GitHub",
+        "Visual Studio Code",
+        "JetBrains IDEs",
+        "Docker",
+        "DigitalOcean",
+        "Google Firebase",
+        "Netlify",
+        "Microsoft Office",
+        "Virtual Box",
+        "VMware Workstation"
+    ],
+
+    "Relavant Courses": [
+        "Data Structures and Algorithms", 
+        "Intro to Software Engineering", 
+        "Intro to Artificial Intelligence",
+        "Cloud Computing", 
+        "Network Engineering",
+        "Sequential Logic Systems", 
+        "Embedded Systems",
+        "Discrete Structures", 
+        "Capstone"
+    ]
+}

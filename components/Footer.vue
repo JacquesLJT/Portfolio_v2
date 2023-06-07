@@ -33,7 +33,7 @@
                 <c-flex>
                     <c-pseudo-box
                         as="a"
-                        href="https://goo.gl/maps/xVyyfkVd6H3zjXfs8"
+                        href="https://goo.gl/maps/Ek1KHCrFnYsGDjsJA"
                         target="_blank"
                         color="#FFECEA"
                         mb="2" 
@@ -43,7 +43,7 @@
                         <font-awesome-icon
                             :icon="['fas', 'map-location-dot']"
                         />
-                        Freeport, ME
+                        Dorchester, Boston MA
                     </c-pseudo-box>
                 </c-flex>
             </c-grid-item>
@@ -128,7 +128,7 @@
                         color="#FFECEA"
                         mb="2" 
                         fontSize="12px"
-                        href="2023_resume.pdf"
+                        href="resume.pdf"
                         target="_blank"
                         :_hover="{textDecoration: 'underline'}"
                         >

@@ -1,0 +1,26 @@
+[
+  {
+    "jobTitle": "University Capstone Project",
+    "companyName": "University of Maine",
+    "duration": "September 2022 - May 2023",
+    "jobDescription": "As part of my Computer Science degree, I completed a capstone project in my final year. I worked in a group of 5 to develop a web application for a client on campus. The application was designed to allow users to create and download their own fantasy creatures, as well as view the collection of creatures stored on the clients database. I was responsible for designing and implementing the creature creator as well as the PDF download functionality. I also contributed to the overall design of the application",
+    "responsibilities": ["Developed a frontend creature creation and viewing tool for a client's existing database of fantasy creatures", "Used a CI/CD workflow to efficiently and effectively develop and deploy the product", "Gained experience in communicating with a client and managing expectations"],
+    "companyLogo": "https://www.logolynx.com/images/logolynx/02/021049ebf751121bc6628a62091d3790.png"
+  },
+  {
+    "jobTitle": "Greenhouse Associate",
+    "companyName": "Estabrook's",
+    "duration": "May 2021 - August 2021",
+    "jobDescription": "At Estabrook's, I served in a Greenhouse Retail Sales position. My role involved tending to a variety of plants, including watering and pruning duties, as well as restocking the greenhouses as necessary. I frequently interacted with customers, assisting them with their questions and providing advice on plant care and maintenance. My position required strong customer service skills and the ability to work independently, both of which I was able to demonstrate consistently throughout my tenure.",
+    "responsibilities": ["Watered and pruned plants, stocked the greenhouses, and assisted customers with queries", "Demonstrated strong customer service skills and ability to work independently", "Gained knowledge of plant care and maintenance."],
+    "companyLogo": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/304856944_492002919601058_1545900952337227744_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=X_TRx2FsK0UAX-HyrDk&_nc_ht=scontent-bos5-1.xx&oh=00_AfCFbx4SjX3szJvnRGHBbMLy_pN4K_GNq8daJx_1RmOrTQ&oe=647D25F8"
+  },
+  {
+    "jobTitle": "Hardlines Team Member",
+    "companyName": "Target",
+    "duration": "September 2017 - January 2021",
+    "jobDescription": "At Target, I was a General Merchandise Team Member where my responsibilities included managing inventory through organizing shelves and restocking items. I frequently assisted customers with inquiries and guided them to the products they were looking for, demonstrating my commitment to delivering high-quality customer service. Working as part of a diverse team, I helped maintain a smoothly running sales floor and contributed to creating a positive store environment",
+    "responsibilities": ["Responsible for stocking items, organizing shelves, and assisting customers", "Demonstrated strong customer service skills and the ability to multitask", "Contributed to a positive team dynamic."],
+    "companyLogo": "https://corporate.target.com/DownloadCMSAsset.ashx?file=/_media/TargetCorp/Press/B-roll%20and%20Press%20Materials/Logos/Target_Bullseye-Logo_Red.jpg"
+  }
+]

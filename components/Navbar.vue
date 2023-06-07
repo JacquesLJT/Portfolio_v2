@@ -105,7 +105,7 @@
                     }"
                     :display="{base: 'none', xl: 'block'}"
                 >
-                    Experience
+                    Experience/Certifications
                 </c-pseudo-box>
             </c-flex>
             <c-flex mr="10">

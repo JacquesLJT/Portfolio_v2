@@ -44,7 +44,8 @@ export default {
       solid: [
         'faArrowDown',
         'faMapLocationDot',
-        'faCheck'
+        'faCheck',
+        'faArrowUpRightFromSquare'
       ],
       brands: [
         'faGithub',

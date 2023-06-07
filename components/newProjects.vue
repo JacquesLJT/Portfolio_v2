@@ -20,6 +20,16 @@
                 Projects
             </c-text>
         </c-flex>
+        
+        <div>
+            <div v-for="project in projects" :key="project.title" class="project">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+            <a v-if="project.project_link" :href="project.project_link">Project Link</a>
+            <img v-if="project.image" :src="project.image" alt="Project Image">
+            </div>
+        </div>
+
         <c-flex
             id = "section-container"
             w="100%"
@@ -475,6 +485,8 @@
         CStack,
         CButton
     } from '@chakra-ui/vue'
+
+    import projects from '~/assets/projects.json'
     
     export default {
         name: 'Projects',
@@ -484,6 +496,11 @@
             CImage,
             CStack,
             CButton
+        },
+        data() {
+            return {
+                projects: projects
+            }
         }
     }
 </script>
