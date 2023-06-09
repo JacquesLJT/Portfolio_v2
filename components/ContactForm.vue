@@ -4,15 +4,15 @@
       <input type="hidden" name="form-name" value="contact" />
       <div class="form-group">
         <label for="name" class="form-label">Your Name:</label>
-        <input type="text" id="name" name="name" v-model="name" class="form-input" />
+        <input type="text" id="name" name="name" v-model="name" class="form-input" required/>
       </div>
       <div class="form-group">
         <label for="email" class="form-label">Your Email:</label>
-        <input type="email" id="email" name="email" v-model="email" class="form-input" />
+        <input type="email" id="email" name="email" v-model="email" class="form-input" required/>
       </div>
       <div class="form-group">
         <label for="message" class="form-label">Message:</label>
-        <textarea id="message" name="message" v-model="message" class="form-input"></textarea>
+        <textarea id="message" name="message" v-model="message" class="form-input" required></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="form-submit">Send</button>
