@@ -1,6 +1,9 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   target: 'static',
+  generate: {
+    fallback: true
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -11,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'My personal portfolio showcasing my work experience and personal projects' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -28,9 +31,12 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/fontawesome',
-
-    '@nuxtjs/google-analytics',
+    '@nuxtjs/google-analytics'
   ],
+  
+  googleAnalytics: {
+    id: 'G-XXXXXXXXXX', // Replace with your actual GA4 (G-...) or Universal Analytics (UA-...) ID
+  },
 
   fontawesome: {
     icons: {

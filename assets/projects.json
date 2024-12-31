@@ -2,9 +2,9 @@
     {
         "title": "Portfolio Website",
         "description": [
-            "This is the second version of my portfolio website, built using Vue.js and Chakra UI. I wanted to create something that would set me apart from other students and job applicants, so I decided to build a portfolio website that showcases my skills and abilities.",
-            "Before building the first version of my portfolio website, I had no experience in web development. However, I was eager to learn and took the initiative to teach myself HTML, CSS, and JavaScript. Within a few weeks, I was able to start work on the first version of my portfolio using React.js. Although I had no prior web development experience, I was happy with the results and proud to show my portfolio to potential employers and colleagues.",
-            "For the second version of my portfolio, I wanted to improve upon the first version and also learn a new framework. I chose to use Vue.js and Chakra UI, as I had heard good things about Vue.js and had previous experience with Chakra UI. I'm pleased with the results and excited to continue building on this project.",
+            "This is the second version of my portfolio website, built with Vue.js and Chakra UI. I wanted to create something that would set me apart from other students and job applicants, so I built a site to showcase my skills and abilities.",
+            "Before creating the first version, I had no experience in web development. However, I was eager to learn and taught myself HTML, CSS, and JavaScript. Within a few weeks, I started work on the first iteration using React.js. Though it was my first foray into web development, I was pleased with the results and proud to share it with potential employers and colleagues.",
+            "For the second version, I aimed to improve upon the original site while also learning a new framework. I chose Vue.js and Chakra UI, having heard positive feedback about Vue and already having some experience with Chakra UI. I’m pleased with how it turned out and look forward to continuing this project.",
             "Both the first and second versions of my portfolio can be viewed on my GitHub page by clicking the buttons below."
         ],
         "link": "https://github.com/JacquesLJT/Portfolio",
@@ -13,14 +13,14 @@
     {
         "title": "Capstone Project",
         "description": [
-            "Over the course of two semesters, I worked with a team of four other students to design, build, and deliver an interactive web application for a client. Our project was guided by the principles of the software development lifecycle (SDLC), and we meticulously documented each phase from initial design and requirement gathering to final delivery and maintenance.",
-            "We were tasked with interfacing a user-friendly front-end, built using Typescript, React, and Vite, with the client's Oracle database via Sequelize, an Object-Relational Mapping tool. Our initial mandate was to focus on front-end development, with the understanding that the back-end infrastructure was already in place.",
-            "However, we soon discovered that we also needed to build out the back-end and database models. This unexpected challenge meant we couldn't fulfill all our initial requirements, but we remained agile and refocused on delivering the major objectives.",
-            "Our team adopted an agile workflow, with two-week sprints and daily standup meetings prior to each scrum. This allowed us to regularly reassess our progress, adjust our plans as necessary, and ensure we maintained steady progress towards our goals.",
-            "My primary responsibility was the development of the creature creator feature, which enables users to design their own fantasy creatures by adjusting various attributes in the creature's stat block. Users can preview their custom creature's stat block and optionally download it as a PDF.",
-            "In addition to this, we implemented a search and filter feature, facilitating easy navigation through the collection of creatures stored in the database.",
-            "To streamline our development process and ensure the reliability of our application, we implemented a continuous integration/continuous deployment (CI/CD) pipeline using GitHub Actions. This allowed us to automate testing and deployment, improving our productivity and reducing the risk of errors.",
-            "Despite facing unanticipated challenges, our team was successful in delivering a functional application that met the client's needs, providing an engaging platform for fantasy creature enthusiasts to create and manage their creature collections."
+            "Over the course of two semesters, I worked with four other students to design, build, and deliver an interactive web application for a client. Our project followed the software development lifecycle (SDLC), and we meticulously documented each phase—from initial design and requirements gathering to final delivery and maintenance.",
+            "We were tasked with creating a user-friendly front end using TypeScript, React, and Vite, then connecting it to the client’s Oracle database via Sequelize (an ORM). Our initial directive focused on front-end development, assuming the back-end was already in place.",
+            "However, we soon discovered that we also needed to develop the back end and database models. This unexpected challenge meant we couldn't meet all our initial requirements, but we remained agile and prioritized the major objectives.",
+            "We adopted an agile workflow, with two-week sprints and daily standup meetings before each scrum. This allowed us to regularly evaluate our progress, adjust plans as needed, and maintain steady momentum toward our goals.",
+            "My primary responsibility was creating the creature creator feature, enabling users to design their own fantasy creatures by adjusting attributes in the stat block. Users can preview their custom creatures and optionally download them as PDFs.",
+            "We also added a search and filter feature, making it easy to navigate the collection of creatures in the database.",
+            "To streamline development and ensure reliability, we implemented a continuous integration/continuous deployment (CI/CD) pipeline via GitHub Actions. This automation improved our productivity and reduced errors.",
+            "Despite unexpected challenges, our team delivered a functional application that met the client’s needs, providing an engaging platform for fantasy creature enthusiasts to create and manage their collections."
         ],
         "link": "https://github.com/triscuitcircuit/Moonwake-FGG",
         "image": "capstone.webp"
@@ -28,11 +28,11 @@
     {
         "title": "Nginx on DigitalOcean",
         "description": [
-            "For my final project in Network Engineering, I had the opportunity to gain practical experience with DigitalOcean, a leading cloud infrastructure provider. I successfully set up and hosted a reverse proxy server on a DigitalOcean droplet, leveraging an Nginx server. The server was meticulously configured to serve a replica of my portfolio site via a dedicated subdomain.",
-            "This project involved multiple stages and showcased my proficiency in various aspects of network engineering, in addition to deepening my practical understanding of DigitalOcean's services. The first step involved setting up and configuring an Nginx webserver on the DigitalOcean droplet. I ensured that it was correctly configured to handle incoming traffic and requests efficiently, thus setting the foundation for the remaining stages of the project.",
-            "To enhance the security of the server, I configured a robust firewall. This was a critical step in securing the DigitalOcean droplet and provided an added layer of protection against potential cyber threats and attacks. Building on this secure foundation, I then set up a reverse proxy using Nginx. This setup allowed the server to handle requests coming to the subdomain and route them appropriately, ensuring seamless navigation for users of the portfolio site.",
-            "Understanding the importance of secure web traffic and data privacy, I proceeded to configure SSL certificates using Let's Encrypt. This crucial step ensured that all data transferred between the web server and browsers remained encrypted and secure, thus enhancing the trustworthiness of the site. The final step of the project involved DNS configuration. I accurately mapped the subdomain to the IP address of the DigitalOcean droplet. This allowed users to access the portfolio site through the dedicated subdomain, completing the user-friendly and secure access design of the project.",
-            "Through this project, I was able to demonstrate a comprehensive understanding of network engineering concepts and cloud infrastructure services. The successful completion of the project resulted in a securely hosted and easily accessible replica of my portfolio site served through a dedicated subdomain."
+            "For my final project in Network Engineering, I gained hands-on experience with DigitalOcean, a leading cloud infrastructure provider. I set up and hosted a reverse proxy server on a DigitalOcean droplet using Nginx, meticulously configuring it to serve a replica of my portfolio site via a dedicated subdomain.",
+            "This project involved multiple stages, showcasing my proficiency in various aspects of network engineering while deepening my understanding of DigitalOcean's services. The first step was installing and configuring Nginx on the droplet to efficiently handle incoming traffic, laying the foundation for the rest of the project.",
+            "To bolster security, I configured a robust firewall, adding an extra layer of protection against potential threats. Building on this secure foundation, I then set up an Nginx reverse proxy to handle subdomain requests and route them appropriately, ensuring seamless user navigation.",
+            "Understanding the need for secure traffic, I configured SSL certificates with Let's Encrypt to keep all browser-server data encrypted. Finally, I mapped the subdomain to the droplet’s IP via DNS, allowing users to access the portfolio site securely and conveniently.",
+            "This project demonstrated my thorough grasp of network engineering concepts and cloud infrastructure. In the end, I delivered a secure, easily accessible replica of my portfolio site via a dedicated subdomain."
         ],
         "link": "",
         "image": "certificate.webp"
@@ -40,9 +40,9 @@
     {
         "title": "Verilog Implementation of Pong",
         "description": [
-            "For my final project in my Sequential Logic Systems course at university, my partner and I successfully developed a functional rendition of the classic game of Pong using Verilog, ultimately implementing it on an Altera FPGA. This project provided a robust exploration into the practical applications of our learned concepts in the course, encapsulating the essence of digital design and hardware programming.",
-            "We were given foundational modules to accurately manage VGA monitor output and CPU timings, and we built upon this foundation by creating the core game logic ourselves. My key contributions lay in designing the play area and crafting the visual elements of the game, which included the ball and the paddles. Not only did I create the visual components, but I also wrote the logical elements that governed their interaction within the play area. This involved designing the movement of the ball, as well as the detection of collisions between the ball, paddles, and the edges of the game area.",
-            "This project served as a testament to my ability to apply theoretical concepts to practical problems, demonstrating my skills in digital design, Verilog programming, and collaborative development processes. The source code and further details for this project can be viewed on GitHub."
+            "For my final project in Sequential Logic Systems, my partner and I developed a functional rendition of the classic game of Pong using Verilog, ultimately implementing it on an Altera FPGA. This project extensively explored the practical applications of digital design and hardware programming.",
+            "We received foundational modules to manage VGA output and CPU timings, and we built upon them to create the core game logic. My contributions involved designing the play area and visual elements (the ball and paddles), as well as the logic governing their interactions. This included handling the ball’s movement and detecting collisions with paddles and game boundaries.",
+            "This project showcased my ability to apply theoretical concepts to real problems, demonstrating my skills in digital design, Verilog programming, and collaborative development. You can view the source code and further details on GitHub."
         ],
         "link": "https://github.com/JacquesLJT/Pong",
         "image": "pong.webp"
@@ -50,10 +50,10 @@
     {
         "title": "Connecting PS/2 Keyboard to Raspberry Pi over GPIO",
         "description": [
-            "In my Embedded Systems course at the University of Maine, I undertook an intriguing project to connect a PS/2 keyboard to a Raspberry Pi through the General-Purpose Input/Output (GPIO) pins. This project was an exploration into the realms of hardware interfacing, device drivers, and real-time programming in an embedded context.",
-            "The central component of the project was a C program that I wrote, which read the scan codes from the keyboard and decoded these inputs to display the corresponding characters on the terminal. This program demonstrated my proficiency in low-level programming and understanding of keyboard interfacing protocols.",
-            "For this project, I used a custom-made Raspberry Pi hat, designed by my professor, Dr. Weaver. This hat included passthroughs for pins 23 and 24, power, and ground, along with a voltage converter for interfacing with the PS/2 port on the board. This usage of custom hardware was a testament to my ability to work with specialized components and further added depth to my understanding of hardware-software interaction in embedded systems.",
-            "While the project was completed successfully, I recognize opportunities for enhancement. In future iterations, I aim to expand the lookup table to cover a more comprehensive set of scan codes and explore the possibility of sending data to the keyboard, thus moving beyond unidirectional communication. This project offered a hands-on experience in embedded systems, exemplifying my skills in C programming, device interfacing, and hardware manipulation."
+            "In my Embedded Systems course at the University of Maine, I connected a PS/2 keyboard to a Raspberry Pi via GPIO pins, exploring hardware interfacing, device drivers, and real-time programming in an embedded context.",
+            "At the core of the project was a C program that read scan codes from the keyboard and decoded them to display corresponding characters on the terminal. This highlighted my proficiency in low-level programming and keyboard interfacing protocols.",
+            "I used a custom Raspberry Pi hat designed by my professor, Dr. Weaver, featuring passthroughs for pins 23 and 24, power, ground, and a voltage converter for the PS/2 port. Working with custom hardware showcased my ability to handle specialized components and deepened my understanding of hardware-software interaction.",
+            "While the project was successful, I see opportunities for improvement. Future iterations could include a more comprehensive lookup table and explore sending data back to the keyboard, moving beyond unidirectional communication. Overall, this project offered valuable hands-on experience in embedded systems, highlighting my skills in C programming, device interfacing, and hardware manipulation."
         ],
         "link": "",
         "image": "rpi_ps2.webp"

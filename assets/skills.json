@@ -5,46 +5,51 @@
         "Java",
         "JavaScript",
         "TypeScript",
+        "PHP",
         "HTML",
         "CSS",
-        "Verilog",
-        "Lisp"
+        "Verilog"
     ],
 
-    "Libraries & Fameworks": [
-        "React",
-        "Node.js",
-        "Vue.js",
+    "Libraries & Frameworks": [
+        "Vue",
         "Nuxt.js",
-        "Jest",
-        "Pandas",
-        "TensorFlow",
-        "Keras"
+        "Chakra UI",
+        "React",
+        "Flask",
+        "Celery"
     ],
 
-    "Software Tools": [
+    "Tools & Platforms": [
+        "Figma",
         "Git",
         "GitHub",
-        "Visual Studio Code",
         "JetBrains IDEs",
+        "VS Code",
+        "Eclipse",
+        "MySQL Workstation",
+        "AWS",
         "Docker",
-        "DigitalOcean",
         "Google Firebase",
-        "Netlify",
-        "Microsoft Office",
-        "Virtual Box",
-        "VMware Workstation"
+        "DigitalOcean",
+        "VirtualBox",
+        "VMware"
     ],
 
-    "Relavant Courses": [
-        "Data Structures and Algorithms", 
-        "Intro to Software Engineering", 
+    "Databases": [
+        "MySQL",
+        "MongoDB"
+    ],
+
+    "Relevant Courses": [
+        "Data Structures and Algorithms",
+        "Intro to Software Engineering",
         "Intro to Artificial Intelligence",
-        "Cloud Computing", 
+        "Cloud Computing",
         "Network Engineering",
-        "Sequential Logic Systems", 
+        "Sequential Logic Systems",
         "Embedded Systems",
-        "Discrete Structures", 
+        "Discrete Structures",
         "Capstone"
     ]
 }
