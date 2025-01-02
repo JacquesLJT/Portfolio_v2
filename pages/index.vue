@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- Navbar and Footer can be moved to a global layout if used across pages -->
     <Navbar />
     <Hero />
     <About />
@@ -12,26 +13,20 @@
 </template>
 
 <script>
-  import Navbar from "@/components/Navbar.vue";
-  import Hero from "@/components/Hero.vue";
-  import About from "@/components/About.vue";
-  import Skills from "@/components/newSkills.vue";
-  import Projects from "@/components/projects.vue";
-  import Experience from "@/components/newExperience.vue";
-  import Contact from "@/components/Contact.vue";
-  import FooterVue from "@/components/Footer.vue";
-
+  /**
+   * Optimized imports with lazy-loading for performance.
+   */
   export default {
     name: "Index",
     components: {
-      Navbar,
-      Hero,
-      About,
-      Skills,
-      Projects,
-      Experience,
-      Contact,
-      FooterVue,
+      Navbar: () => import("@/components/Navbar.vue"),
+      Hero: () => import("@/components/Hero.vue"),
+      About: () => import("@/components/About.vue"),
+      Skills: () => import("@/components/newSkills.vue"),
+      Projects: () => import("@/components/projects.vue"),
+      Experience: () => import("@/components/newExperience.vue"),
+      Contact: () => import("@/components/Contact.vue"),
+      FooterVue: () => import("@/components/Footer.vue"),
     },
   };
 </script>
