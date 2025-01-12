@@ -1,1 +1,1 @@
-http://blog.thibodeau.dev/*  /blog/:splat  200
+https://blog.thibodeau.dev/* https://thibodeau.dev/blog/:splat 301!
